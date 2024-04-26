@@ -1,1 +1,1 @@
-# This contains websites i build using html, css and javascript
+This contains websites I build using html, css and javascript
