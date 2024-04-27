@@ -7,12 +7,12 @@
   -color-light: #f4f4f4;
   --color-black: #000f37;
   --color-dark: #575757;
-  
+
   --bottom-section-padding: 12rem;
   --bottom-section-padding-mobile: 8rem;
-  
+
   --transition: all 400ms ease;
-  
+
   --container-width: 84%;
   --container-width-tablet: 90%;
   --container-width-phone: 94%;
@@ -271,7 +271,7 @@ header {
 .clients__container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2rem; 
+  gap: 2rem;
 }
 
 .clients__container div {
@@ -286,4 +286,40 @@ header {
 
 .clients__container div:hover {
   background: var(--color-white);
+}
+
+/* ================= TESTIMONIALS ===================== */
+#testimonials {
+  text-align: center;
+}
+
+.testimonials__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  background: #f4f4f4;
+  padding: 3rem;
+  font-size: 0.88rem;
+  border: 1px solid transparent;
+  transition: all 300ms ease;
+}
+
+.testimonial:hover {
+  background: var(--color-white);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  box-shadow: 0 2rem 2rem var(--color-primary-variant);
+  z-index: 1;
+}
+
+.testimonial__client {
+  display: flex;
+  gap: 1rem;
+  text-align: left;
 }
