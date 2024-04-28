@@ -379,3 +379,21 @@ header {
   display: block;
 }
 
+/* ================= DownloadApp ===================== */
+
+.downloadApp__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.downloadApp__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#downloadApp .cta {
+  justify-content: start;
+  margin-top: 2rem;
+}
