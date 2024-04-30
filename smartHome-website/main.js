@@ -16,3 +16,41 @@ closeBtn.addEventListener('click', () => {
     closeBtn.style.display = 'none';
 })
 
+// show/ hide faqs
+
+// const faqs = document.querySelectorAll('.faq');
+
+// faqs.forEach(faq => {
+//     faq.addEventListener('click', () => {
+//         faq.classList.toggle('open');
+//         // change icon
+//         const icon = faq.querySelector('.faq__icon i');
+//         if (icon.classList.contains('fa-plus')) {
+//             icon.classList.remove('fa-plus');
+//             icon.classList.add('fa-minus');
+//         } else {
+//             icon.classList.remove('fa-minus');
+//             icon.classList.add('fa-plus');
+//         }
+//     });
+// });
+
+// show/ hide faqs
+
+// show/ hide faqs
+const faqs = document.querySelectorAll('.faq');
+
+faqs.forEach(faq => {
+    faq.addEventListener('click', () => {
+        faq.classList.toggle('open');
+        // change icon
+        const icon = faq.querySelector('.faq__icon');
+        icon.textContent = faq.classList.contains('open') ? '-' : '+';
+    })
+})
+
+// add background style to navbar
+window.addEventListener('scroll', () => {
+    document.querySelector('nav').classList.toggle('window-scroll', window.scrollY > 0);
+})
+
